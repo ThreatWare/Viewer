@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="threatwareApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Threatware Configuration Viewer</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="lib/datatables/media/css/jquery.dataTables.min.css" />
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="lib/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="env.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="modules/module-list.module.js"></script>
+  <script src="modules/module-config.module.js"></script>
+  <script src="modules/module-list.component.js"></script>
+  <script src="modules/module-config.component.js"></script>
+
+</head>
+
+<body>
+  <div class="navbar navbar-default nabar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="nabar=header">
+        <span class="navbar-brand"><img alt="Threatware Viewer" src="img/threatware.jpg">
+        </span>
+      </div>
+    </div>
+  </div>
+  <div ng-view></div>
+</body>
+
+</html>
